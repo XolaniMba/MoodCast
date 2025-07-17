@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>🌤️ Today's Vibe</h1>
+    <form id="weather-form">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Enter your city..."
+        required
+      />
+      <button type="submit">Check the vibe</button>
+    </form>
+
+    <div class="weather-result hidden" id="weather-result">
+      <h2 id="city-name"></h2>
+      <p id="temperature"></p>
+      <p id="weather-description"></p>
+    </div>
+
+    <div class="mood-box hidden" id="mood-box">
+      <h3 id="mood-message"></h3>
+      <p id="mood-quote"></p>
+      <img id="mood-gif" src="" alt="" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
