@@ -1,0 +1,136 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fff0f6);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+/* Container */
+.app-container {
+  background: #ffffffee;
+  backdrop-filter: blur(5px);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Headline */
+h1 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  width: 65%;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #00b4d8;
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1.2rem;
+  background: #00b4d8;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0077b6;
+}
+
+/* Weather Result */
+.weather-result,
+.mood-box {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+  margin-top: 1.5rem;
+}
+
+.weather-result.show,
+.mood-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#city-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+#temperature {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#weather-description {
+  font-style: italic;
+  color: #666;
+}
+
+/* Mood Box */
+#mood-message {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#mood-quote {
+  font-style: italic;
+  margin: 0.8rem 0;
+  color: #444;
+}
+
+#mood-gif {
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
